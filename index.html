@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/0692c82101.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <title>BlackTickets.com</title>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <span class="logo"><img src="logo.png" alt=""></span>
+<i id="menu-icon" onclick="openmenu()" class="fas fa-bars"></i>
+<div id="navbartoggle">
+  <span class="menu-txt">Menu</span>
+  <i id="close" onclick="closemenu()" class="fas fa-times"></i>
+  <ul class="nav-items">
+    <li><a href="#home-navigate" onclick="closemenu()">Home</a></li>
+    <li><a href="#upload-ticket-navigate" onclick="closemenu()">Upload Ticket</a></li>
+    <li><a href="#" onclick="closemenu()">Wallet</a></li>
+    <li><a href="#account-section-navigate" onclick="closemenu()">My Account</a></li>
+  </ul>
+</div>
+</nav>
+<div class="container">
+
+<section id="home">
+<div id="home-navigate"></div>
+<div id="search-bar" onclick="searchclick()">
+  <i id="close2" onclick="searchclick2()" class="fas fa-times"></i>
+  <input type="text"  class="txt-box" placeholder="Search">
+  <button type="button" class="search-btn" name="button"><i class="fas fa-search"></i></button>
+</div>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="https://www.denofgeek.com/wp-content/uploads/2021/12/spider-man-no-way-home-poster-tom-holland-sony.jpg?fit=1200%2C680" alt=""></div>
+    <div class="swiper-slide"><img src="https://bioofy.com/wp-content/uploads/2021/07/Etharkkum-Thunindhavan.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="https://www.filmibeat.com/img/2021/10/xdhanush-s-maaran-ott-hotstar-1635013711.jpg.pagespeed.ic.wuTyoJAY9H.jpg" alt=""></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+<div class="recommended-movies">
+  <h1>Recommended movies</h1>
+  <img src="https://media.comicbook.com/wp-content/uploads/2012/06/amazing-spider-man-poster.jpg" alt="">
+  <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/d1pklzbuyaab0la-1552597012.jpg" alt="">
+  <img src="https://penbugs.com/wp-content/uploads/2020/02/FB_IMG_1582698067450.jpg" alt="">
+<img src="https://sportshub.cbsistatic.com/i/2022/02/13/1b917e47-3a41-415a-b3f5-4f855dc0caad/doctor-strange-in-the-multiverse-of-madness-trailer-poster.jpg?auto=webp&width=810&height=1200&crop=0.675:1,smart" alt="">
+</div>
+</section>
+
+<section id="upload-ticket">
+  <div id="upload-ticket-navigate"></div>
+<span class="heading-1">Upload Ticket</span>
+<span class="span-1">Add image</span>
+<input type="file" id="input-1" accept="image/png"></input>
+
+<span class="span-2">Movie Name</span>
+<input type="text" id="input-2"></input>
+
+<span class="span-3">Theater Name</span>
+<input type="text" id="input-3" ></input>
+
+<span class="span-4">Number of seats</span>
+<input type="number" id="input-4" ></input>
+
+<span class="span-5">Seat number</span>
+<input type="number" id="input-5" ></input>
+
+<button type="button" class="btn-upload" name="button">Upload Ticket</button>
+</section>
+<section id="account-section">
+  <div id="account-section-navigate"></div>
+
+<img class="profile-img" src="https://w0.peakpx.com/wallpaper/192/635/HD-wallpaper-tony-stark-avengers-ironman-marvel-mcu-moon-robert-downey-jr-star.jpg" alt="">
+<div class="box-details">
+<i id="edit" class="fas fa-edit"></i>
+  <h1 class="name">Welcome , RDJ</h1>
+  <div class="personal-data">
+    <ul>
+      <li>Nation</li>
+      <li>City</li>
+      <li>Mobile no.</li>
+      <li>G-mail Id</li>
+    </ul>
+    <ul>
+      <li>India</li>
+      <li>Coimbatore</li>
+      <li>9943612325</li>
+      <li>rdj@gmail.com</li>
+    </ul>
+  </div>
+</div>
+</section>
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="script_slider.js">
+
+  </script>
+</body>
+
+</html>

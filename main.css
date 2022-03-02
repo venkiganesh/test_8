@@ -1,0 +1,469 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background-color: black;
+}
+
+/*                 Navigate               */
+#home-navigate{
+  position: absolute;
+  top:-15em;
+  width: 100%;
+  height: 1em;
+}
+#upload-ticket-navigate{
+  position: absolute;
+  top:-20em;
+  left:-2em;
+  width: 100%;
+  height: 2em;
+  border: 2px solid red;
+  z-index: 1;
+}
+
+#account-section-navigate{
+  position: absolute;
+  top:-20em;
+  left:-2em;
+  width: 100%;
+  height: 2em;
+  border: 2px solid red;
+  z-index: 1;
+
+}
+#navbar{
+  position: absolute;
+  top:0;
+  margin: 0px;
+  width: 100%;
+  height: 9em;
+  transition: top 1s;
+}
+@keyframes navup  {
+  0%{
+    top:0;
+  }
+  100%{
+    top:-10em;
+  }
+}
+@keyframes navdown  {
+  0%{
+    top:-10em;
+  }
+  100%{
+    top:0em;
+  }
+}
+@keyframes searchup  {
+  0%{
+    top:5em;
+  }
+  100%{
+    top:-5em;
+  }
+}
+@keyframes searchdown  {
+  0%{
+    top:-5em;
+  }
+  100%{
+    top:5em;
+  }
+}
+
+.logo img{
+  position: absolute;
+  top:-110px;
+  left:2em;
+width: 350px;
+}
+#menu-icon{
+  position: absolute;
+  top:45px;
+  right:50px;
+  color: white;
+  cursor: pointer;
+  font-size: 60px;
+}
+#navbartoggle{
+  width: 61.2em;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left:-15em;
+transition: right 1s;
+background-color: black;
+visibility: hidden;
+z-index: 2;
+}
+@keyframes navopen {
+  0%{
+    visibility: hidden;
+    left:-15em;
+  }
+  100%{
+    visibility: visible;
+    left:0px;
+  }
+}
+@keyframes navclose {
+  0%{
+    visibility: visible;
+    left:0px;
+  }
+  100%{
+    visibility: hidden;
+    left:-15em;
+
+  }
+}
+
+.nav-items{
+  list-style: none;
+  position: absolute;
+  left:20em;
+  top:25em;
+  height: 50vh;
+}
+.menu-txt{
+  color: white;
+position: absolute;
+  top: 40px;
+  left:50px;
+  font-size: 80px;
+}
+.nav-items li{
+  text-align: center;
+
+}
+.nav-items li a{
+  line-height: 250px;
+  color: white;
+  cursor: pointer;
+  font-size: 50px;
+  text-decoration: none;
+}
+.nav-items li:hover{
+  color: #f0022d;
+  transform: scale(1.1);
+}
+
+#close{
+  position: absolute;
+  top: 40px;
+  left:13em;
+  color: white;
+  font-size: 70px;
+  cursor: pointer;
+}
+/*                                   Home                       */
+.container{
+  width: 100%;
+  height: 120vh;
+  position: absolute;
+  top:15em;
+  overflow: hidden;
+}
+#home{
+width: 100%;
+height: 150vh;
+}
+.swiper {
+  width: 900px;
+  height: 480px;
+  position: absolute;
+  top:20em;
+  left:0.3em;
+}
+.swiper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#search-bar{
+  position: absolute;
+  top:5em;
+  left:12em;
+  transition: top 1s;
+}
+.txt-box{
+  width: 20em;
+  height: 3em;
+  font-size: 30px;
+  font-weight: bolder;
+
+}
+.txt-box::placeholder{
+  font-size: 30px;
+  font-weight: bolder;
+  color: #f0022d;
+  position: absolute;
+  top:15px;
+  left: 10px;
+  opacity: 0.9;
+}
+.txt-box:focus::placeholder{
+  opacity: 0;
+}
+.search-btn{
+  position: absolute;
+  width: 8em;
+  height: 6.7em;
+  border: 0px;
+background-color: black;
+}
+.search-btn i{
+font-size: 40px;
+font-weight: bolder;
+color: #f0022d;
+}
+
+#close2{
+  position: absolute;
+  top:0px;
+  left:-90px;
+  font-size: 80px;
+  color: #f0022d;
+  visibility: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+.recommended-movies{
+  position: absolute;
+  top:70em;
+  left:4em;
+}
+.recommended-movies h1{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top:-1.5em;
+  left: -20px;
+}
+.recommended-movies img{
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 80px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.recommended-movies img:nth-child(4){
+height: 28em;
+}
+/*                                   Upload Ticket                       */
+
+#upload-ticket{
+  position: absolute;
+  top:1em;
+  left:90em;
+  width: 100%;
+  height: 100vh;
+}
+.heading-1{
+  position: absolute;
+  top:30px;
+  left:10px;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #f0022d;
+}
+.span-1{
+  position: absolute;
+  top:7em;
+  left:0em;
+  font-size: 40px;
+  color: white;
+
+}
+#input-1{
+  position: absolute;
+  top:19em;
+  right:5em;
+  width: 40em;
+  height: 10em;
+  border: 1px solid red;
+  outline: none;
+  background-color: black;
+
+}
+.span-2{
+  position: absolute;
+  top:14.3em;
+  left:0em;
+  font-size: 40px;
+  color: white;
+
+}
+#input-2{
+  position: absolute;
+  top:43.5em;
+  right:5em;
+  width: 40em;
+  height: 3em;
+  border: 0px;
+  border-bottom: 1px solid red;
+  outline: none;
+  background-color: black;
+color: white;
+font-weight: bolder;
+
+}
+.span-3{
+  position: absolute;
+  top:22em;
+  left:0em;
+  font-size: 40px;
+  color: white;
+
+}
+#input-3{
+  position: absolute;
+  top:14.1em;
+  right:1.5em;
+  width: 8em;
+  height: 1em;
+  border: 0px;
+  border-bottom: 1px solid red;
+  outline: none;
+  background-color: black;
+color: white;
+font-weight: bolder;
+font-size: 60px;
+}
+
+.span-4{
+  position: absolute;
+  top:28em;
+  left:0em;
+  font-size: 40px;
+  color: white;
+
+}
+#input-4{
+  position: absolute;
+  top:83em;
+  right:18em;
+  width: 15em;
+  height: 3em;
+  border: 0px;
+  border-bottom: 1px solid red;
+  outline: none;
+  background-color: black;
+color: white;
+font-weight: bolder;
+
+}
+.span-5{
+  position: absolute;
+  top:34.5em;
+  left:0em;
+  font-size: 40px;
+  color: white;
+
+}
+#input-5{
+  position: absolute;
+  top:102em;
+  right:12em;
+  width: 25em;
+  height: 3em;
+  border: 0px;
+  border-bottom: 1px solid red;
+  outline: none;
+  background-color: black;
+color: white;
+font-weight: bolder;
+
+}
+
+.btn-upload{
+  position: absolute;
+  top:45em;
+  left:6em;
+  height: 2em;
+  background-color: black;
+  font-size: 40px;
+  font-weight: bolder;
+outline: none;
+border:1px solid #f0022d;
+color: #f0022d;
+width: 8em;
+
+}
+
+
+/*             My Account        */
+
+#account-section{
+  position: absolute;
+  top:1em;
+  left:200em;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.profile-img{
+  width: 30em;
+  height: 32em;
+  border-radius: 100%;
+  position: absolute;
+  left:17em;
+
+}
+
+.box-details{
+  position: absolute;
+  top:15em;
+  left:1.5em;
+  width: 90%;
+  height: 60vh;
+  border: 2px solid white;
+  z-index: -1;
+}
+
+.name{
+  position: absolute;
+  top:6.5em;
+  left:5.5em;
+  color: white;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.personal-data{
+  position: absolute;
+  top:12em;
+  width: 100%;
+  color: white;
+  font-size: 40px;
+}
+.personal-data ul{
+list-style: none;
+line-height: 4em;
+letter-spacing: 6px;
+}
+.personal-data ul:nth-child(1){
+position: absolute;
+left:0;
+}
+.personal-data ul:nth-child(2){
+color: red;
+text-align: right;
+margin-right: 20px;
+}
+
+#edit{
+  position: absolute;
+margin: 15px;
+right: 0;
+  color: red;
+  font-size: 40px;
+}
